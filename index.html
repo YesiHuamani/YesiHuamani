@@ -44,15 +44,17 @@
     .art-piece {
       text-align: center;
     }
-    .art-piece img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
-    }
-    .art-piece img:hover {
-      transform: scale(1.03);
-    }
+   .art-piece img {
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* Sharp edges! */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.art-piece img:hover {
+  transform: scale(1.03);
+}
     .caption {
       margin-top: 0.5rem;
       font-style: italic;
@@ -87,10 +89,9 @@
   </section>
 
   <section id="gallery">
-    <h2 style="text-align:center">Gallery</h2>
-   <section id="portfolio">
-  <h2>Digital Art</h2>
+  <h2 style="text-align:center;">Art Gallery</h2>
   <div class="gallery">
+    <!-- Paste all your images here — no headers, just images -->
     <div class="art-piece">
       <img src="Digital/Elvis.jpg" alt="Elvis">
       <p class="caption">Elvis</p>
@@ -107,10 +108,6 @@
       <img src="Digital/Posing.jpg" alt="Lady Neck">
       <p class="caption">Lady Neck</p>
     </div>
-  </div>
-
-  <h2>Handmade Art</h2>
-  <div class="gallery">
     <div class="art-piece">
       <img src="Handmade/CoWorkers.jpg" alt="CoWorkers">
       <p class="caption">CoWorkers</p>
@@ -127,10 +124,6 @@
       <img src="Handmade/Pizza.jpg" alt="Pizza">
       <p class="caption">Pizza</p>
     </div>
-  </div>
-
-  <h2>Doodles</h2>
-  <div class="gallery">
     <div class="art-piece">
       <img src="Doodles/Lady Face.jpg" alt="Lady Face">
       <p class="caption">Lady Face</p>
@@ -142,9 +135,11 @@
   </div>
 </section>
 
+
   <section id="about">
   <h2 style="text-align:center;">About Me</h2>
-  <div style="max-width: 700px; margin: 0 auto; padding: 1rem; line-height: 1.7; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; padding: 1rem 2rem; line-height: 1.7; text-align: justify;">
+
     <p>For as long as I can remember, art has always been a part of my life. I’ve filled countless sketchbooks that go unfinished. I doodle on receipts, coffee cups, and even my work agendas.</p>
 
     <p>I kept my art mostly to myself out of fear of criticism — afraid no one would connect with what I made, or worse, that people would say I had absolutely zero talent. A lot of my work started off as an unserious drawing on cheap paper or a Post-it, because I didn’t want to “waste good paper” or use up the expensive paints and canvases I’d bought for art classes.</p>
